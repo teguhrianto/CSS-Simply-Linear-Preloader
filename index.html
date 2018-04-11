@@ -5,21 +5,337 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	    <!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+
 	    <!-- Font Awesome -->
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+	    <!-- Prism -->
+	    <link rel="stylesheet" href="assets/packages/prism/prism.css">
+
+	    <link rel="stylesheet" href="assets/css/theme.css">
+
     	<title>CSS Simply Linear Preloader</title>
   	</head>
   	<body>
-    	<h1>Hello, world!</h1>
+    	<div class="jumbotron jumbotron-fluid text-center">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12">
+					    <h1 class="display-4">CSS Simply Linear Preloader</h1>
+					  	<p class="lead">This is a Simply Linear Preloader with or without logo / image / brand. Feel free to use this preloader in your project.</p>
+					  	<a class="btn btn-outline-dark mb-2" href="https://github.com/teguhrianto22/CSS-Simply-Linear-Preloader/archive/master.zip" target="_blank"><i class="far fa-arrow-alt-circle-down"></i> Download .zip</a>
+					  	<a class="btn btn-outline-dark mb-2" href="https://github.com/teguhrianto22/CSS-Simply-Linear-Preloader" target="_blank"><i class="fab fa-github"></i> View on Github</a>
+					</div>
+				</div>
+  			</div>
+		</div>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2>Example</h2>
+					</div>
+					<div class="col-md-6">
+						<div class="preloader">
+							<img src="assets/img/logo.png">
+							<div class="bar-container">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</div>
+
+						<p class="mb-0">HTML</p>
+<pre><code class="language-markup">&lt;div class="preloader"&gt;
+	&lt;img src="assets/img/logo.png"&gt;
+	&lt;div class="bar-container"&gt;
+		&lt;div class="bar"&gt;&lt;/div&gt;
+		&lt;div class="bar"&gt;&lt;/div&gt;
+		&lt;div class="bar"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					
+					<p class="mb-0">CSS</p>
+<pre><code class="language-css">.preloader {
+    position: relative;
+    text-align: center;
+    padding: 2rem 0;
+}
+ .preloader img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    height: 50px;
+}
+ .preloader .bar-container {
+    position: relative;
+    height: 4px;
+    width: 130px;
+    background-color: #eee;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+ .preloader .bar-container .bar {
+    content: "";
+    display: inline;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    right: 0;
+    background-color: #FFD32A;
+}
+ .preloader .bar-container .bar:nth-child(1) {
+    animation: linear-animation 3s linear 1s infinite;
+}
+ .preloader .bar-container .bar:nth-child(2) {
+    animation: linear-animation 3s linear 2s infinite;
+}
+ .preloader .bar-container .bar:nth-child(3) {
+    animation: linear-animation 3s linear 3s infinite;
+}
+ @keyframes linear-animation {
+    0% {
+        right: 100%;
+        width: 10%;
+    }
+    30% {
+        right: 0%;
+        width: 40%;
+    }
+    50% {
+        right: 0%;
+        width: 0%;
+    }
+    80% {
+        right: 0%;
+        width: 0%;
+    }
+    100% {
+        right: 0%;
+        width: 0%;
+    }
+}</code></pre>		
+					</div>
+					<div class="col-md-6">
+						<div class="preloader preloader-alt">
+							<img src="assets/img/logo.png">
+							<div class="bar-container">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</div>
+
+						<p class="mb-0">HTML</p>
+<pre><code class="language-markup">&lt;div class="preloader"&gt;
+	&lt;img src="assets/img/logo.png"&gt;
+	&lt;div class="bar-container"&gt;
+		&lt;div class="bar"&gt;&lt;/div&gt;
+		&lt;div class="bar"&gt;&lt;/div&gt;
+		&lt;div class="bar"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					
+					<p class="mb-0">CSS</p>
+<pre><code class="language-css">.preloader {
+    position: relative;
+    text-align: center;
+    padding: 2rem 0;
+}
+ .preloader img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    height: 50px;
+}
+ .preloader .bar-container {
+    position: relative;
+    height: 4px;
+    width: 130px;
+    background-color: #eee;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+ .preloader .bar-container .bar {
+    content: "";
+    display: inline;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    right: 0;
+    background-color: #f96868;
+}
+ .preloader .bar-container .bar:nth-child(1) {
+ 	background-color: #f96868;
+    animation: linear-animation 3s linear 1s infinite;
+}
+ .preloader .bar-container .bar:nth-child(2) {
+ 	background-color: #FFD32A;
+    animation: linear-animation 3s linear 2s infinite;
+}
+ .preloader .bar-container .bar:nth-child(3) {
+ 	background-color: #46be8a;
+    animation: linear-animation 3s linear 3s infinite;
+}
+ @keyframes linear-animation {
+    0% {
+        right: 100%;
+        width: 10%;
+    }
+    30% {
+        right: 0%;
+        width: 40%;
+    }
+    50% {
+        right: 0%;
+        width: 0%;
+    }
+    80% {
+        right: 0%;
+        width: 0%;
+    }
+    100% {
+        right: 0%;
+        width: 0%;
+    }
+}</code></pre>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 text-center">
+						<h2>Example Full Screen</h2>
+					</div>
+					<div class="col-md-12 text-center my-3">
+						<a href="example-fullscreen.html" target="_blank" class="btn btn-outline-dark btn-lg"><i class="fas fa-eye"></i> See Example</a>
+					</div>
+
+					<div class="col-md-6">
+						<p class="mb-0">HTML</p>
+<pre><code class="language-markup">&lt;div class="fullscreen"&gt;
+	&lt;div class="preloader"&gt;
+		&lt;img src="assets/img/logo.png"&gt;
+		&lt;div class="bar-container"&gt;
+			&lt;div class="bar"&gt;&lt;/div&gt;
+			&lt;div class="bar"&gt;&lt;/div&gt;
+			&lt;div class="bar"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					
+					<p class="mb-0">CSS</p>
+<pre><code class="language-css">.fullscreen .preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 2000;
+     background-color: #FFF;
+     text-align: center;
+     padding: 0;
+}
+ .fullscreen .preloader img {
+     position: absolute;
+     top: 40%;
+     z-index: 2;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     height: 50px;
+}
+ .fullscreen .preloader .bar-container {
+     position: absolute;
+     top: 50%;
+     height: 4px;
+     width: 130px;
+     background-color: #eee;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+}
+ .fullscreen .preloader .bar-container .bar {
+     content: "";
+     display: inline;
+     position: absolute;
+     height: 100%;
+     width: 0;
+     right: 0;
+     background-color: #FFD32A;
+}
+ .fullscreen .preloader .bar-container .bar:nth-child(1) {
+     animation: linear-animation 3s linear 1s infinite;
+}
+ .fullscreen .preloader .bar-container .bar:nth-child(2) {
+     animation: linear-animation 3s linear 2s infinite;
+}
+ .fullscreen .preloader .bar-container .bar:nth-child(3) {
+     animation: linear-animation 3s linear 3s infinite;
+}
+ @keyframes linear-animation {
+     0% {
+         right: 100%;
+         width: 10%;
+    }
+     30% {
+         right: 0%;
+         width: 40%;
+    }
+     50% {
+         right: 0%;
+         width: 0%;
+    }
+     80% {
+         right: 0%;
+         width: 0%;
+    }
+     100% {
+         right: 0%;
+         width: 0%;
+    }
+}
+</code></pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    	<footer>
+    		<div class="container">
+    			<div class="col-md-12 text-center">
+		    		<p>Share with Love!</p>
+		    		<ul>
+		    			<li>
+		    				<a href="https://github.com/teguhrianto22/" target="_blank"><i class="fab fa-github"></i></a>
+		    			</li>
+		    			<li>
+		    				<a href="https://instagram.com/teguhrianto22" target="_blank"><i class="fab fa-instagram"></i></a>
+		    			</li>
+		    			<li>
+		    				<a href="https://facebook.com/22teguh" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		    			</li>
+		    		</ul>
+		    		<p>Copyleft &copy; 2018 Teguh Rianto. All Left Reserved.</p>
+		    	</div>
+		    </div>
+    	</footer>
 
 	    <!-- Optional JavaScript -->
 	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	    <script type="text/javascript" src="assets/packages/prism/prism.js"></script>
   	</body>
 </html>
