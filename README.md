@@ -3,7 +3,7 @@ This is a Simply Linear Preloader with or without logo / image / brand. Feel fre
 
 ## Quick Start
 HTML
-```
+```html
 <div class="fullscreen">
     <div class="preloader">
         <img src="assets/img/logo.png">
@@ -16,7 +16,7 @@ HTML
 </div>
 ```
 CSS
-```
+```css
 .fullscreen .preloader {
      position: fixed;
      top: 0;
@@ -90,7 +90,7 @@ CSS
 ```
 
 JS (Required Jquery)
-```
+```js
 $(document).ready(function(){
     $('.fullscreen .preloader').fadeOut(5000);
 });
