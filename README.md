@@ -1,6 +1,9 @@
 # CSS Simply Linear Preloader
 This is a Simply Linear Preloader with or without logo / image / brand. Feel free to use this preloader in your project.
 
+## Demo
+[See DEMO](https://teguhrianto.github.io/CSS-Simply-Linear-Preloader/)
+
 ## Quick Start
 HTML
 ```html
